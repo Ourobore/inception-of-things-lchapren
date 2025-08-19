@@ -38,9 +38,10 @@ kind: Service
 metadata:
   name: app1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app.kubernetes.io/name: app1
   ports:
     - port: 8888
       nodePort: 8888
+      protocol: TCP
