@@ -12,9 +12,14 @@ spec:
       labels:
         app: app1
     spec:
+      type: LoadBalancer
+      ports:
+        - protocol: TCP
+          port: 8888
+          targetPort: 8888
       containers:
       - name: main
-        image: niklasnikki/hello-world:latest
+        image: wil42/playground:v1
         resources:
           requests:
             cpu: 100m
@@ -23,5 +28,6 @@ spec:
             cpu: 100m
             memory: 100Mi
         ports:
-        - containerPort: 80
+        - containerPort: 8888
           name: http
+          port: 8888
