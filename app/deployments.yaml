@@ -38,4 +38,5 @@ spec:
   type: LoadBalancer
   selector:
     app: app1
-  ports: []
+  ports:
+    - port: 8888
