@@ -38,8 +38,4 @@ spec:
   type: LoadBalancer
   selector:
     app: app1
-    ports:
-    - port: 8888
-      targetPort: 8888
-      protocol: TCP
-
+  ports: []
