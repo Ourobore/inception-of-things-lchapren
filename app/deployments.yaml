@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: main
-        image: wil42/playground:v1
+        image: wil42/playground:v2
         resources:
           requests:
             cpu: 100m
