@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: app1
-    specos:
+    spec:
       containers:
       - name: main
         image: wil42/playground:v2
